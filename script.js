@@ -1,7 +1,7 @@
 let isRunning = false;
 let startTime;
 let interval;
-let elapsedTime = 0; // Store the elapsed time in milliseconds
+let elapsedTime = 0;
 
 const circle = document.querySelector(".circle");
 const timeDisplay = document.querySelector(".time");
@@ -22,7 +22,6 @@ function updateTime() {
     
     timeDisplay.textContent = formattedTime;
 
-    // Calculate the percentage of time passed and update the gradient background
     const percentage = (totalMilliseconds % 1000) / 10;
     const currentAngle = (percentage / 100) * 360;
     circle.style.background = `conic-gradient(#3498db ${currentAngle}deg, transparent ${currentAngle}deg)`;
@@ -34,7 +33,7 @@ startStopButton.addEventListener("click", function () {
         startStopButton.textContent = "Start";
         lapButton.disabled = true;
     } else {
-        startTime = Date.now() - (elapsedTime || 0); // Use elapsedTime if available
+        startTime = Date.now() - (elapsedTime || 0); 
         interval = setInterval(updateTime, 10);
         startStopButton.textContent = "Stop";
         lapButton.disabled = false;
@@ -48,7 +47,7 @@ resetButton.addEventListener("click", function () {
     startStopButton.textContent = "Start";
     lapButton.disabled = true;
     timeDisplay.textContent = "00:00:00.000";
-    elapsedTime = 0; // Reset the elapsed time
+    elapsedTime = 0;
     circle.style.background = "conic-gradient(#3498db 0deg, transparent 0deg)";
     lapsList.innerHTML = "";
 });
@@ -60,4 +59,4 @@ lapButton.addEventListener("click", function () {
     lapsList.appendChild(lapItem);
 });
 
-resetButton.click(); // Initialize the display
+resetButton.click(); 
