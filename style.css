@@ -106,7 +106,7 @@ body {
 }
 
 .circle {
-    animation: rotateSunburst 6s linear infinite;
+    animation: rotateSunburst 12s linear infinite;
 }
 
 @keyframes rotateSunburst {
