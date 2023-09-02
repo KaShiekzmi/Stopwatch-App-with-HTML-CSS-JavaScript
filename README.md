@@ -2,6 +2,8 @@
 
 Welcome to the Stopwatch App repository! This web application is built using HTML, CSS, and JavaScript, offering a simple and intuitive way to track time with precision.
 
+![Capture](https://github.com/KaShiekzmi/Stopwatch-App-with-HTML-CSS-JavaScript/assets/114513868/a9927163-2cc5-4fb5-b66b-eeb8aa8029dd)
+
 ## Features
 
 - **User-friendly Interface**: Easily track time with a clean and intuitive interface.
