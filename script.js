@@ -33,8 +33,8 @@ startStopButton.addEventListener("click", function () {
         startStopButton.textContent = "Start";
         lapButton.disabled = true;
     } else {
-        startTime = Date.now() - (elapsedTime || 0); 
-        interval = setInterval(updateTime, 10);
+        startTime = Date.now() - (elapsedTime || 0);
+        interval = setInterval(updateTime, 19);
         startStopButton.textContent = "Stop";
         lapButton.disabled = false;
     }
@@ -59,4 +59,4 @@ lapButton.addEventListener("click", function () {
     lapsList.appendChild(lapItem);
 });
 
-resetButton.click(); 
+resetButton.click();
