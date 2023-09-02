@@ -22,7 +22,7 @@ function updateTime() {
     
     timeDisplay.textContent = formattedTime;
 
-    const percentage = (totalMilliseconds % 1000) / 10;
+    const percentage = (totalMilliseconds/10 % 1000) / 10;
     const currentAngle = (percentage / 100) * 360;
     circle.style.background = `conic-gradient(#3498db ${currentAngle}deg, transparent ${currentAngle}deg)`;
 }
